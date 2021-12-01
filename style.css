@@ -1,0 +1,213 @@
+/* varaibles */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+
+:root {
+    --main-bg-color: rgb(68, 85, 238);
+    --font1:'Fira Sans Condensed', sans-serif;
+    --font2:'Noto Sans', sans-serif;
+}
+
+.font1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+.font2{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* CSS Starts */
+
+* {
+  margin: 0;
+  padding: 0;
+  /*box-shadow: border-box; */
+}
+
+body {
+    background-color: hsl(252, 30%, 100%);
+    
+}
+
+
+/* Navbar CSS */
+
+.navbar {
+background-color: var(--main-bg-color);
+font-family: var(--font1);
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 100%;
+margin: auto;
+height: 50px;
+position:sticky;
+}
+
+.nav-left {
+    /* background: chocolate; */
+    font-size: 20px;
+    color:white;
+    padding: 0px 10px;
+}
+
+.nav-right {
+    /* background: cornflowerblue; */
+    display: flex;
+}
+
+.nav-right ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul li {
+   list-style: none;
+   margin: 0px 9px;
+}
+
+.nav-right ul li a {
+    font-size: 13px;
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.nav-right ul li a:hover {
+    /* font-weight: bold; */
+    background: rgba(174, 162, 228, 0.1);
+    
+}
+
+/* CSS for main body */
+
+.mainbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .mainbody .contentleft {
+    background-color: chartreuse; For ads
+}
+
+.mainbody .contentright {
+    background-color: chocolate; For ads 
+} */
+
+.mainbody .centerforms {
+    font-family: var(--font1);
+    /* background-color: white; */
+    background-image: linear-gradient(rgb(246, 240, 247), rgb(227, 229, 233));
+    margin: 50px;
+    width: 60%;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for items inside centerforms */
+
+.centerforms .heading {
+    background-image: linear-gradient(rgb(218, 84, 230), rgb(50, 101, 243));
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.centerforms .gpaInput {
+   /* background-color: yellowgreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0;
+}
+
+.centerforms .btnparent {
+   /* background-color: darkgray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#btn {
+    color: white;   
+    font-size: 20px;
+    font-family: var(--font1);
+    background-color: var(--main-bg-color);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: slateblue;
+}
+
+.centerforms .gpaInput select {
+    margin: 2px 0;
+}
+
+.centerforms .gpaInput label {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.gpaselect {
+    border: none;
+}
+
+/* === Making responsive === */
+
+@media(max-width: 700px) {
+
+    .navbar {
+        background-color: var(--main-bg-color);
+        font-family: var(--font1);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 73px;
+        position:sticky;
+        overflow: hidden;
+    }
+
+    .nav-left {
+        /* background: chocolate; */
+        font-size: 20px;
+        color:white;
+        padding: 0px 10px;
+    }
+
+    .nav-right ul li {
+        list-style: none;
+        margin: 7px 5px;
+     }
+
+    .nav-right ul li a {
+        font-size: 13px;
+        text-decoration: none;
+        color:white;
+        cursor: pointer;
+        padding: 2px;
+        border-radius: 4px;
+    }
+
+
+}
+
+
+/* =====================+++ CSS for Home ENDS here.. +++================ */
+
+

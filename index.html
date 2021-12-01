@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>GPA Calculator (Grade 11 12 New Course)</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <span id="Logo"> GPA Calculator (Grade 11 12 New Course) </span>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Help</a></li>
+                <li><a href="/">Privacy Policy</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Contact Us/Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mainbody">
+        <div class="contentleft">
+            <!-- For ads--> 
+        </div>
+
+        <div class="centerforms">
+            <span class="heading"> Enter your GPA in: </span>
+            <form>
+                <div class="gpaInput">
+                    <label for=" comp1"> Nepali: </label>
+                    <select class ="gpaselect" id = "gpathNep">
+                        <option value="th"> Theory </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                    <select class ="gpaselect" id = "gpaprNep">
+                        <option value="pr"> Practical </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                </div>
+
+                <div class ="gpaInput">
+                    <label for=" comp2"> English: </label>
+                    <select class="gpaselect" id = "gpathEng">
+                        <option value="th"> Theory </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                    <select class ="gpaselect" id = "gpaprEng">
+                        <option value="pr"> Practical </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                </div>
+
+                <div class ="gpaInput">
+                    <label for=" comp3"> Social & Life Skill Edu. or Maths: </label>
+                    <select class ="gpaselect" id = "gpathSlm">
+                        <option value="th"> Theory </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                    <select class ="gpaselect" id = "gpaprSlm">
+                        <option value="pr"> Practical </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                </div>
+
+                <div class="gpaInput">
+                    <label for=" opt1"> Optional 1: </label>
+                    <select class="gpaselect" id = "gpathO1">
+                        <option value="th"> Theory </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                    <select class ="gpaselect" id = "gpaprO1">
+                        <option value="pr"> Practical </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                </div>
+
+                <div class="gpaInput">
+                    <label for="opt2"> Optional 2: </label>
+                    <select class = "gpaselect" id = "gpathO2">
+                        <option value="th"> Theory </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                    <select class = "gpaselect" id = "gpaprO2">
+                        <option value="pr"> Practical </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                </div>
+
+                <div class="gpaInput">
+                    <label for="opt3"> Optional 3: </label>
+                    <select class ="gpaselect" id = "gpathO3">
+                        <option value="th"> Theory </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                    <select class ="gpaselect" id = "gpaprO3">
+                        <option value="pr"> Practical </option>
+                        <option value="4.0"> A+ (4.0)</option>
+                        <option value="3.6"> A (3.6)</option>
+                        <option value="3.2"> B+ (3.2)</option>
+                        <option value="2.8"> B (2.8)</option>
+                        <option value="2.4"> C+ (2.4)</option>
+                        <option value="2.0"> C (2.0)</option>
+                        <option value="1.6"> D+ (1.6)</option>
+                        <option value="1.2"> D (1.2)</option>
+                        <option value="0.8"> E (0.8)</option>
+                    </select>
+                </div>
+
+                
+            </form>
+           <span class = "btnparent"> <button id = "btn" onclick="calcX();"> SUBMIT </button>  </span>
+        </div>
+
+        <div class="contentright">
+            <!-- For ads--> 
+        </div>
+    </div>
+
+    
+
+
+</body>
+<script src="mainlogic.js"> </script>
+
+</html>
